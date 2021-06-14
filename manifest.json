@@ -17,7 +17,8 @@
 	},
 	"preload": [
 		"http",
-		"zip"
+		"zip",
+		"ZipServer"
 	],
 	"data": {
 		"*": [
