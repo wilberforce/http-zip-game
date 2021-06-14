@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "rollup-plugin-copy2": "^0.2.0",
+    "rollup-plugin-zip-encryptable": "^0.0.5",
+    "vite": "^2.3.7"
+  }
+}

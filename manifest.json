@@ -1,0 +1,40 @@
+{
+	"config": {
+		"www": { "port":8000 }
+	},
+
+	"include": [
+		"$(MODDABLE)/examples/manifest_base.json",
+		"$(MODDABLE)/examples/manifest_net.json"
+	],
+	"modules": {
+		"*": [
+			"./main",
+			"./ZipServer",
+			"$(MODULES)/network/http/*",
+			"$(MODULES)/files/zip/*"
+		]
+	},
+	"preload": [
+		"http",
+		"zip"
+	],
+	"data": {
+		"*": [
+			"./www"
+		]
+	},
+
+	"platforms": {
+		"esp32": {
+			"config": {
+				"www": { "port":80 }
+			}
+		},
+		"win": {
+			"config": {
+				"www": { "port":80 }
+			}
+		}
+	}
+}
