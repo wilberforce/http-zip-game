@@ -9,5 +9,8 @@
     "rollup-plugin-copy2": "^0.2.0",
     "rollup-plugin-zip-encryptable": "^0.0.5",
     "vite": "^2.3.7"
+  },
+  "dependencies": {
+    "rollup-plugin-zip": "^1.0.1"
   }
 }
