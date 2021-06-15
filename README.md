@@ -9,12 +9,11 @@ cd www
 npm install
 npm run build
 cd ..
-#change to lin/mac esp32 etc
-mcconfig -d -m -p win
+mcconfig -d -m
 open browser http://localhost:8080
 ```
 
 
 ### changes to rebuild
 from the project root:
-`npm --prefix www run build && mcconfig -d -m -p win`
+`npm --prefix www run build && mcconfig -d -m`
