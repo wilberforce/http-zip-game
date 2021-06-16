@@ -13,6 +13,9 @@ public_assets = public_assets.map(function(match) {
 })
 
 export default {
+  server: {
+    host: true
+  },
   plugins: [{
       ...copy({
         assets: 

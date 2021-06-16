@@ -281,7 +281,7 @@ Runner.prototype = {
     }
   },
   init: function () {
-    document.querySelector('.' + Runner.classes.ICON).style.visibility = 'hidden';
+    document.querySelector('.' + Runner.classes.ICON).style.display = 'none';
     this.adjustDimensions();
     this.setSpeed();
     this.containerEl = document.createElement('div');
